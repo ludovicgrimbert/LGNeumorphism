@@ -18,6 +18,24 @@ public struct LGNeumorphismView: View {
     public var shadowColorPrimary: Color = Color.black
     public var shadowColorSecondary: Color = Color.white
     
+    public init(style: LGNeumorphismStyle,
+                level: LGNeumorphismLevel,
+                vision:LGNeumorphismVision,
+                width: CGFloat,
+                height: CGFloat,
+                color: Color,
+                shadowColorPrimary: Color,
+                shadowColorSecondary: Color) {
+        self.style = style
+        self.level = level
+        self.vision = vision
+        self.width = width
+        self.height = height
+        self.color = color
+        self.shadowColorPrimary = shadowColorPrimary
+        self.shadowColorSecondary = shadowColorSecondary
+    }
+    
     public var body: some View {
         switch (level, vision) {
         case (.high,.shadow): ShapeHighShadow(style: style,
