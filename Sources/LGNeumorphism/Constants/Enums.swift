@@ -18,7 +18,7 @@ public enum LGNeumorphismVision {
     case deep
 }
 
-public  enum LGNeumorphismStyle {
+public enum LGNeumorphismStyle {
     case roundedRectangle(cornerRadius: CGFloat)
     case circle
     case triangle

@@ -9,13 +9,13 @@ import Foundation
 import SwiftUI
 
 public struct ShapeHighDeep: View {
-    let style : LGNeumorphismStyle
-    let width: CGFloat
-    let height: CGFloat
-    let color: Color
-    var shadowColorPrimary: Color = Color.black
+    public let style : LGNeumorphismStyle
+    public let width: CGFloat
+    public let height: CGFloat
+    public let color: Color
+    public var shadowColorPrimary: Color = Color.black
     
-    var shape: some Shape {
+    public var shape: some Shape {
         return LGNeumorphismView.getShape(style: style)
     }
     

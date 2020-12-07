@@ -9,12 +9,12 @@ import Foundation
 import SwiftUI
 
 public struct ShapeHighShadow: View {
-    let style : LGNeumorphismStyle
-    let width: CGFloat
-    let height: CGFloat
-    let color: Color
-    var shadowColorPrimary: Color = Color.black
-    var shadowColorSecondary: Color = Color.white
+    public let style : LGNeumorphismStyle
+    public let width: CGFloat
+    public let height: CGFloat
+    public let color: Color
+    public var shadowColorPrimary: Color = Color.black
+    public var shadowColorSecondary: Color = Color.white
     
     public var body: some View {
         LGNeumorphismView.getShape(style: style)
