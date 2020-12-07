@@ -9,14 +9,14 @@ import SwiftUI
 
 public struct LGNeumorphismView: View {
     
-    var style: LGNeumorphismStyle
-    var level: LGNeumorphismLevel
-    var vision:LGNeumorphismVision
-    let width: CGFloat
-    let height: CGFloat
-    let color: Color
-    var shadowColorPrimary: Color = Color.black
-    var shadowColorSecondary: Color = Color.white
+    public var style: LGNeumorphismStyle
+    public var level: LGNeumorphismLevel
+    public var vision:LGNeumorphismVision
+    public let width: CGFloat
+    public let height: CGFloat
+    public let color: Color
+    public var shadowColorPrimary: Color = Color.black
+    public var shadowColorSecondary: Color = Color.white
     
     public var body: some View {
         switch (level, vision) {
