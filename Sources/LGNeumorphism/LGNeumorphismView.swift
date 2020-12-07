@@ -15,8 +15,8 @@ public struct LGNeumorphismView: View {
     public let width: CGFloat
     public let height: CGFloat
     public let color: Color
-    public var shadowColorPrimary: Color = Color.black
-    public var shadowColorSecondary: Color = Color.white
+    public var shadowColorPrimary: Color
+    public var shadowColorSecondary: Color
     
     public init(style: LGNeumorphismStyle,
                 level: LGNeumorphismLevel,
@@ -24,8 +24,8 @@ public struct LGNeumorphismView: View {
                 width: CGFloat,
                 height: CGFloat,
                 color: Color,
-                shadowColorPrimary: Color,
-                shadowColorSecondary: Color) {
+                shadowColorPrimary: Color = Color.black,
+                shadowColorSecondary: Color = Color.white) {
         self.style = style
         self.level = level
         self.vision = vision
