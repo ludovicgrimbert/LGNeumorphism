@@ -13,8 +13,8 @@ public struct ShapeLowShadow: View {
     public let width: CGFloat
     public let height: CGFloat
     public let color: Color
-    public var shadowColorPrimary: Color = Color.black
-    public var shadowColorSecondary: Color = Color.white
+    public var shadowColorPrimary: Color
+    public var shadowColorSecondary: Color
     
     public var body: some View {
         LGNeumorphismView.getShape(style: style)
